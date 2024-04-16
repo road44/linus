@@ -1,0 +1,46 @@
+# ################
+# General Settings
+# ################
+write_enable=YES
+dirmessage_enable=YES
+nopriv_user=ftpsecure
+# #######################
+# Local FTP user Settings
+# #######################
+local_enable=YES
+# ##########################
+# Anonymus FTP user Settings
+# ##########################
+anonymous_enable=YES
+anon_world_readable_only=YES
+# ############
+# Log Settings
+# ############
+syslog_enable=YES
+# #################
+# Transfer Settings
+# #################
+connect_from_port_20=YES
+ascii_upload_enable=YES
+pam_service_name=vsftpd
+listen=NO
+listen_ipv6=YES
+ssl_enable=NO
+dsa_cert_file=
+pasv_min_port=30001
+pasv_max_port=45000
+anon_max_rate=768000
+anon_mkdir_write_enable=NO
+anon_root=/ftpanonymous
+anon_umask=034
+anon_upload_enable=YES
+chroot_local_user=NO
+ftpd_banner=Dzień dobry. Witam na moim serwerze FTP.
+idle_session_timeout=300
+local_max_rate=983040
+log_ftp_protocol=YES
+max_clients=5
+max_per_ip=5
+pasv_enable=YES
+ssl_tlsv1=YES
+xferlog_enable=YES
